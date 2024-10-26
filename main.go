@@ -68,7 +68,7 @@ func main() {
 		proxy.ServeHTTP(w, r)
 	}
 
-	staticRemote, _ := url.Parse("https://f1vp.netlify.app")
+	staticRemote, _ := url.Parse("https://f1wv.netlify.app")
 	staticProxy := httputil.NewSingleHostReverseProxy(staticRemote)
 	serverSideLogin := 0
 	if login != "" && password != "" {
